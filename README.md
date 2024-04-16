@@ -16,54 +16,52 @@ _GitHub Copilot can help you code by offering autocomplete-style suggestions rig
 </header>
 
 <!--
-  <<< Author notes: Step 3 >>>
+  <<< Author notes: Step 2 >>>
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
-## Step 3: View the GitHub Copilot tab with multiple suggestions
+## Step 2: Seeing AI code suggestions in a Javascript file!
 
-_Nice work! You just used AI code suggestions within a Javascript file by using GitHub Copilot :sparkles:_
+_Nice work! :tada: You created a Codespace using a devcontainer file that installed Copilot!_
 
-Keep in mind that as you continue to use copilot, you may not want some of the suggestions GitHub Copilot offers. GitHub Copilot will show you multiple suggestions in a new tab.
+GitHub Copilot provides suggestions for numerous languages and a wide variety of frameworks, but works especially well for Python, JavaScript, TypeScript, Ruby, Go, C# and C++. The following samples are in JavaScript, but other languages will work similarly.
 
-### :keyboard: Activity: Pull the latest code to the Codespace repo.
+Let's try this out utilizing Javascript for Copilot.
 
-> **Note**
-> Pull MUST be done prior to the next activity.
+### :keyboard: Activity: Add a Javascript file and start writing code
 
-1. Use the VS Code terminal to pull the latest code:
+1. From inside the codespace in the VS Code explorer window, create a new file.
+
+> **Note**:
+> If you closed the Codespace from above, please open it back up or create a new Codespace.
+
+2. Name the file `skills.js`
+3. Verify your new file looks like:
+   ![Screen Shot 2023-03-09 at 9 21 34 AM](https://user-images.githubusercontent.com/26442605/224105906-d1beb531-b747-4c7a-85ba-a12526488422.png)
+4. In the `skills.js` file, type the following function header.
 
    ```
-   git pull
+   function calculateNumbers(var1, var2)
    ```
 
-### :keyboard: Activity: Add another Javascript method and view all suggestions
+   GitHub Copilot will automatically suggest an entire function body in grayed text. Below is an example of what you'll most likely see, but the exact suggestion may vary.
+   ![Screen Shot 2023-04-27 at 10 23 06 AM](https://user-images.githubusercontent.com/26442605/234941079-b4bf3e9d-fc70-4b20-b74c-0ee753ba344e.png)
 
-1. From inside the codespace in the VS Code explorer window, create a new file. Note: If you closed the Codespace from above please open it back up or create a new Codespace.
-2. Name the file `member.js`
-3. In the `member.js` file, type the following function header.
-   ```
-   function skillsMember()
-   ```
-4. Stop typing and view the Copilot suggestion by hovering over the red squiggly and select the `...`
-5. Click `Open Completions Panel`. Copilot will synthesize around 10 different code suggestions. You should see something like this:
-   ![Screen Shot 2023-04-27 at 10 06 55 AM](https://user-images.githubusercontent.com/26442605/234937592-d196bd5e-8ac2-4d9a-87f4-94e8a9b6a417.png)
-6. Find a solution you like and click `Accept Solution`.
-7. Your `member.js` file will be updated with your solution.
+5. Press `Tab` to accept the suggestion.
 
 ### :keyboard: Activity: Push code to your repository from the codespace
 
-1. Use the VS Code terminal to add the `member.js` file to the repository:
+1. Use the VS Code terminal to add the `skills.js` file to the repository:
 
    ```
-   git add member.js
+   git add skills.js
    ```
 
 2. Next from the VS Code terminal stage and commit the changes to the repository:
 
    ```
-   git commit -m "Copilot second commit"
+   git commit -m "Copilot first commit"
    ```
 
 3. Finally from the VS Code terminal push to code to the repository:
